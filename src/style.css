@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background: black;
+  background: rgb(11, 121, 1);
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -17,7 +17,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* Clase general de la carta */
 .card {
   position: relative;
   width: 240px;
@@ -30,23 +29,14 @@ body {
   align-items: center;
   justify-content: center;
   user-select: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-8px) rotate(1.5deg);
-  box-shadow: 0 28px 60px rgba(0,0,0,0.5);
-}
-
-/* Clase por palo — rojo */
 .heart   { color: #d62828; }
 .diamond { color: #d62828; }
 
-/* Clase por palo — negro */
 .spade { color: #111111; }
 .club  { color: #111111; }
 
-/* Esquinas */
 .corner {
   position: absolute;
   display: flex;
@@ -67,7 +57,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Símbolo central */
 .card-body-center {
   font-size: 5rem;
   line-height: 1;

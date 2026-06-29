@@ -14,29 +14,50 @@
 
 <body>
   <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <body>
+
   <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
 
-    <h1 class="mb-5 title">Carta Aleatoria</h1>
+    <h1 class="mb-4 title">Carta Aleatoria</h1>
 
     <div class="card" id="card">
 
       <div class="corner top-left">
         <div class="corner-value" id="val-tl"></div>
-        <div class="corner-suit" id="suit-tl"></div>
+        <div class="corner-suit"  id="suit-tl"></div>
       </div>
 
       <div class="card-body-center" id="center-pips"></div>
 
       <div class="corner bottom-right">
         <div class="corner-value" id="val-br"></div>
-        <div class="corner-suit" id="suit-br"></div>
+        <div class="corner-suit"  id="suit-br"></div>
       </div>
 
     </div>
 
-    <p class="mt-4 subtitle">Recarga la página para obtener una nueva carta</p>
+    <button id="btn-new" class="btn btn-danger mt-4 px-4 fw-bold">
+      Nueva Carta
+    </button>
+
+    <p class="mt-3 subtitle">Nueva carta automática en <span id="countdown">10</span>s</p>
+
+    <div class="d-flex gap-3 align-items-end mt-3">
+      <div>
+        <label class="text-white mb-1">Ancho</label>
+        <input type="number" id="input-width" class="form-control" value="240" min="100" max="500" />
+      </div>
+      <div>
+        <label class="text-white mb-1">Alto</label>
+        <input type="number" id="input-height" class="form-control" value="340" min="150" max="700" />
+      </div>
+      <button id="btn-resize" class="btn btn-outline-light">Aplicar</button>
+    </div>
 
   </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
